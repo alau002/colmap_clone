@@ -250,6 +250,8 @@ if(ASAN_ENABLED)
     endif()
 endif()
 
+set(CMAKE_CUDA_ARCHITECTURES native)
+
 if(CUDA_ENABLED AND CUDA_FOUND)
     if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES)
         message(
